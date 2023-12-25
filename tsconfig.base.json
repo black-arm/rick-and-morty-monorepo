@@ -1,36 +1,40 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2020", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@rick-and-morty-monorepo/api": ["libs/characters/api/src/index.ts"],
-      "@rick-and-morty-monorepo/data-access": [
-        "libs/characters/data-access/src/index.ts"
-      ],
-      "@rick-and-morty-monorepo/domain": [
-        "libs/characters/domain/src/index.ts"
-      ],
-      "@rick-and-morty-monorepo/characters/features": [
-        "libs/characters/features/src/index.ts"
-      ],
-      "@rick-and-morty-monorepo/shared-ui": [
-        "libs/shared/shared-ui/src/index.ts"
-      ],
-      "@rick-and-morty-monorepo/characters/shell": ["libs/characters/shell/src/index.ts"],
-      "@rick-and-morty-monorepo/ui": ["libs/characters/ui/src/index.ts"]
-    }
-  },
-  "exclude": ["node_modules", "tmp"]
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "es2015",
+        "module": "esnext",
+        "lib": ["es2020", "dom"],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "@rick-and-morty-monorepo/api": [
+                "libs/characters/api/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/characters/features": [
+                "libs/characters/features/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/characters/shell": [
+                "libs/characters/shell/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/data-access": [
+                "libs/characters/data-access/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/domain": [
+                "libs/characters/domain/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/shared-ui": [
+                "libs/shared/shared-ui/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/ui": ["libs/characters/ui/src/index.ts"]
+        }
+    },
+    "exclude": ["node_modules", "tmp"]
 }

@@ -50,8 +50,8 @@
         "indent": "error"
       },
       "extends": [
-        "plugin:@angular-eslint/recommend",
-        "plugin@angular-eslint/template/process-inline-template",
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates",
         "prettier"
       ]
     },
