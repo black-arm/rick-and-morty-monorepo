@@ -4,7 +4,7 @@
   "projectType": "application",
   "prefix": "rick-and-morty-monorepo",
   "sourceRoot": "apps/rick-and-morty-monorepo/src",
-  "tags": [],
+  "tags": ["scope:app"],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
