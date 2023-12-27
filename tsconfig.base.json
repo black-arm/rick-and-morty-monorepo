@@ -30,6 +30,45 @@
             "@rick-and-morty-monorepo/domain": [
                 "libs/characters/domain/src/index.ts"
             ],
+            "@rick-and-morty-monorepo/episodes-api": [
+                "libs/episodes/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/episodes-data-access": [
+                "libs/episodes/episodes-data-access/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/episodes-domain": [
+                "libs/episodes/episodes-domain/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/episodes-features": [
+                "libs/episodes/episodes-features/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/episodes-shell": [
+                "libs/episodes/episodes-shell/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/episodes-ui": [
+                "libs/episodes/episodes-ui/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/episodes/episodes-api": [
+                "libs/episodes/episodes-api/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/locations-api": [
+                "libs/locations/locations-api/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/locations-data-access": [
+                "libs/locations/locations-data-access/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/locations-domain": [
+                "libs/locations/locations-domain/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/locations-features": [
+                "libs/locations/locations-features/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/locations-shell": [
+                "libs/locations/locations-shell/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/locations-ui": [
+                "libs/locations/locations-ui/src/index.ts"
+            ],
             "@rick-and-morty-monorepo/shared-ui": [
                 "libs/shared/shared-ui/src/index.ts"
             ],

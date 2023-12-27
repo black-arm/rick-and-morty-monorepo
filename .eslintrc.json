@@ -14,7 +14,7 @@
             "depConstraints": [
               {
                 "sourceTag": "scope:app",
-                "onlyDependOnLibsWithTags": ["type:shell"]
+                "onlyDependOnLibsWithTags": ["type:shell", "type:shared-ui"]
               },
               {
                 "sourceTag": "type:api",

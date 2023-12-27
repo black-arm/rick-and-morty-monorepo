@@ -4,10 +4,9 @@ import { RouterModule } from '@angular/router';
 @Component({
   standalone: true,
   imports: [RouterModule],
-  selector: 'rick-and-morty-monorepo-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  selector: 'app-root',
+  template: `
+    <router-outlet></router-outlet>
+  `
 })
-export class AppComponent {
-  title = 'rick-and-morty-monorepo';
-}
+export class AppComponent {}

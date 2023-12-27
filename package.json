@@ -5,7 +5,8 @@
   "scripts": {
     "format-libs": "npx prettier \"libs/**/*.{ts,html,css,scss}\" --write",
     "format-apps": "npx prettier \"apps/**/*.{ts,html,css,scss}\" --write",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "start": "nx serve rick-and-morty-monorepo --watch"
   },
   "private": true,
   "dependencies": {

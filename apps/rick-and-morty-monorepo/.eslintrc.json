@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "rick-and-morty-monorepo",
+            "prefix": "app",
             "style": "kebab-case"
           }
         ]

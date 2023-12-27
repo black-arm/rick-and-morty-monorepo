@@ -3,7 +3,7 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/shared/shared-ui/src",
   "prefix": "rick-and-morty-monorepo",
-  "tags": ["type:shared-ui"],
+  "tags": ["type:shared-ui", "type:shared"],
   "projectType": "library",
   "targets": {
     "test": {
