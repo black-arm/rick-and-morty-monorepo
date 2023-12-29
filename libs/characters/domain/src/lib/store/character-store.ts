@@ -1,5 +1,5 @@
 import { patchState, signalStore, withMethods, withState } from "@ngrx/signals";
-import { Character, CharacterFilters } from "../models";
+import { Character, CharacterFilters } from "@rick-and-morty-monorepo/characters-util";
 import { inject } from "@angular/core";
 import { CharactersHttpService } from "../characters-http/characters-http.service";
 import { rxMethod } from '@ngrx/signals/rxjs-interop';

@@ -1,7 +1,7 @@
 import { TestBed } from "@angular/core/testing"
 import { CharacterStore } from './character-store';
 import { CharactersHttpService } from "../characters-http/characters-http.service";
-import { Character, CharacterFilters } from "../models";
+import { Character, CharacterFilters } from "@rick-and-morty-monorepo/characters-util";
 import { of } from "rxjs";
 import { Response } from "@rick-and-morty-monorepo/util";
 

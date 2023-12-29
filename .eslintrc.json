@@ -26,7 +26,11 @@
               },
               {
                 "sourceTag": "type:feature",
-                "onlyDependOnLibsWithTags": ["type:domain", "type:util"]
+                "onlyDependOnLibsWithTags": ["type:domain", "type:util", "type:ui"]
+              },
+              {
+                "sourceTag": "type:ui",
+                "onlyDependOnLibsWithTags": ["type:util"]
               },
               {
                 "sourceTag": "type:domain",

@@ -1,0 +1,30 @@
+<div class="card lg:card-side bg-base-100 shadow-xl">
+  <figure><img [src]="src" alt="image"/></figure>
+  <div class="card-body">
+    <h2 class="card-title">{{ title }}</h2>
+    <p class="text-base">
+      @switch (status) {
+        @case ('Alive') {
+          <div class="badge badge-primary badge-xs"></div> Alive
+        }
+        @case ('Dead') {
+          <div class="badge badge-error badge-xs"></div> Dead
+        }
+        @default {
+          <div class="badge badge-neutral badge-xs"></div> Unknown
+        }
+      } - {{ species }}
+    </p>
+    <p class="text-base">Last known location: </p>
+    <p class="text-base">
+      @if (location?.name) {
+        {{ location?.name }}
+      } @else {
+        Unknown
+      }
+    </p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Listen</button>
+    </div>
+  </div>
+</div>
