@@ -3,7 +3,7 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/characters/domain/src",
   "prefix": "rick-and-morty-monorepo",
-  "tags": [],
+  "tags": ["type:domain"],
   "projectType": "library",
   "targets": {
     "test": {

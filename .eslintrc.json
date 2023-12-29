@@ -18,7 +18,7 @@
               },
               {
                 "sourceTag": "type:api",
-                "onlyDependOnLibsWithTags": ["type:data-access", "type:util"]
+                "onlyDependOnLibsWithTags": ["type:domain", "type:util"]
               },
               {
                 "sourceTag": "type:shell",
@@ -26,7 +26,11 @@
               },
               {
                 "sourceTag": "type:feature",
-                "onlyDependOnLibsWithTags": ["type:data-access", "type:util"]
+                "onlyDependOnLibsWithTags": ["type:domain", "type:util"]
+              },
+              {
+                "sourceTag": "type:domain",
+                "onlyDependOnLibsWithTags": ["type:util"]
               }
             ]
           }
