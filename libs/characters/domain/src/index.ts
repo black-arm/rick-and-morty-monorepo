@@ -1,1 +1,2 @@
-export * from './lib/domain/domain.component';
+export * from './lib/store/character-store';
+export * from './lib/characters-http/characters-http.service';

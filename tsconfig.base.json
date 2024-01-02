@@ -18,6 +18,9 @@
             "@rick-and-morty-monorepo/api": [
                 "libs/characters/api/src/index.ts"
             ],
+            "@rick-and-morty-monorepo/characters-ui": [
+                "libs/characters/characters-ui/src/index.ts"
+            ],
             "@rick-and-morty-monorepo/characters-util": [
                 "libs/characters/characters-util/src/index.ts"
             ],
@@ -63,10 +66,13 @@
             "@rick-and-morty-monorepo/locations-ui": [
                 "libs/locations/locations-ui/src/index.ts"
             ],
+            "@rick-and-morty-monorepo/mocks": [
+                "libs/shared/mocks/src/index.ts"
+            ],
+            "@rick-and-morty-monorepo/my-lib": ["my-lib/src/index.ts"],
             "@rick-and-morty-monorepo/shared-ui": [
                 "libs/shared/shared-ui/src/index.ts"
             ],
-            "@rick-and-morty-monorepo/ui": ["libs/characters/ui/src/index.ts"],
             "@rick-and-morty-monorepo/util": [
                 "libs/shared/util/src/index.ts",
                 "libs/shared/util/src/lib/env/environments.ts"

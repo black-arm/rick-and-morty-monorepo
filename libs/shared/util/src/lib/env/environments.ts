@@ -1,6 +1,6 @@
-class Environments {
-  private _rickAndMortyApi = process.env["RICK_AND_MORTY_API"];
 
+class Environments {
+  private _rickAndMortyApi = 'https://rickandmortyapi.com/api'
  get api() {
   return this._rickAndMortyApi;
  }

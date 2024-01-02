@@ -26,14 +26,18 @@
               },
               {
                 "sourceTag": "type:feature",
-                "onlyDependOnLibsWithTags": ["type:domain", "type:util", "type:ui"]
+                "onlyDependOnLibsWithTags": ["type:domain", "type:util", "type:ui", "type:mock"]
               },
               {
                 "sourceTag": "type:ui",
-                "onlyDependOnLibsWithTags": ["type:util"]
+                "onlyDependOnLibsWithTags": ["type:util", "type:mock"]
               },
               {
                 "sourceTag": "type:domain",
+                "onlyDependOnLibsWithTags": ["type:util", "type:mock"]
+              },
+              {
+                "sourceTag": "type:mock",
                 "onlyDependOnLibsWithTags": ["type:util"]
               }
             ]

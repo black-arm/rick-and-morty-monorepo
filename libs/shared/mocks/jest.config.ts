@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-    displayName: 'ui',
+    displayName: 'mocks',
     preset: '../../../jest.preset.js',
     setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-    coverageDirectory: '../../../coverage/libs/characters/ui',
+    coverageDirectory: '../../../coverage/libs/shared/mocks',
     transform: {
         '^.+\\.(ts|mjs|js|html)$': [
             'jest-preset-angular',

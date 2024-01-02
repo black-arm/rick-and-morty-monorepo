@@ -1,0 +1,19 @@
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-4">
+
+  @for (character of characters; track character.id) {
+    <app-card class="lg:col-span-2" [gender]="character.gender" [title]="character.name"
+      [species]="character.species"
+      [location]="character.location"
+      [src]="character.image"
+      [status]="character.status"></app-card>
+  }
+
+</div>
+<div class="flex justify-center mt-10">
+  <div class="join">
+    <button class="join-item btn" data-testid="prev" (click)="onClick('prev')">«</button>
+    <button class="join-item btn" data-testid="currentPage">Page {{ currentPage() }}</button>
+    <button class="join-item btn" data-testid="next" (click)="onClick('next')">»</button>
+  </div>
+</div>
