@@ -1,1 +1,4 @@
-export {CharacterStore, CharacterState } from '@rick-and-morty-monorepo/domain'
+export {
+    CharacterStore,
+    CharacterState,
+} from '@rick-and-morty-monorepo/domain';

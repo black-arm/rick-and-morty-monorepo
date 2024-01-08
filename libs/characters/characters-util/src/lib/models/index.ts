@@ -1,2 +1,2 @@
-export * from './character'
-export * from './character-filters'
+export * from './character';
+export * from './character-filters';

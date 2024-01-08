@@ -1,10 +1,9 @@
-import { env } from "@rick-and-morty-monorepo/util";
+import { env } from '@rick-and-morty-monorepo/util';
 
 export class Endpoints {
+    private _api = env.api;
 
-  private _api = env.api;
-
-  get characters(){
-    return `${this._api}/character`;
-  }
+    get characters() {
+        return `${this._api}/character`;
+    }
 }

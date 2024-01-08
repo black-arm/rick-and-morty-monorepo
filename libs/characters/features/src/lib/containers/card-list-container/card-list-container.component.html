@@ -1,3 +1,5 @@
-<app-card-list [characters]="store.characters()"
-  [totalPages]="store.pages()"
-  (pageSelected)="changePage($event)"></app-card-list>
+<app-card-list
+    [characters]="store.characters()"
+    [totalPages]="store.pages()"
+    (pageSelected)="changePage($event)"
+></app-card-list>
