@@ -1,5 +1,4 @@
 <div class="template">
-
   <div class="drawer">
     <input id="sidebar" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
@@ -20,7 +19,8 @@
           </ul>
         </div>
       </div>
-     <router-outlet></router-outlet>
+      <app-spinner [showSpinner]="generalStore.isLoading()"></app-spinner>
+      <router-outlet></router-outlet>
     </div>
     <div class="drawer-side">
       <label for="sidebar" aria-label="close sidebar" class="drawer-overlay"></label>

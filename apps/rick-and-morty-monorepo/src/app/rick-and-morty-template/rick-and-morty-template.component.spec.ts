@@ -20,6 +20,7 @@ describe('RickAndMortyTemplateComponent', () => {
         await TestBed.configureTestingModule({
             imports: [RickAndMortyTemplateComponent, RouterTestingModule.withRoutes(routes)],
             providers: [
+
             ]
         }).compileComponents();
 

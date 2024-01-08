@@ -70,6 +70,9 @@
                 "libs/shared/mocks/src/index.ts"
             ],
             "@rick-and-morty-monorepo/my-lib": ["my-lib/src/index.ts"],
+            "@rick-and-morty-monorepo/shared-services": [
+                "libs/shared/shared-services/src/index.ts"
+            ],
             "@rick-and-morty-monorepo/shared-ui": [
                 "libs/shared/shared-ui/src/index.ts"
             ],

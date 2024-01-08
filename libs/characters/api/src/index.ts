@@ -1,1 +1,1 @@
-export * from './lib/api/api.component';
+export {CharacterStore, CharacterState } from '@rick-and-morty-monorepo/domain'

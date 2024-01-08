@@ -16,7 +16,7 @@ describe('characters http service', () => {
     (service: CharactersHttpService, httpMock: HttpTestingController) => {
 
     service.getCharacters().subscribe(() => {});
-    const req = httpMock.expectOne('https://rickandmortyapi.com/api/characters');
+    const req = httpMock.expectOne('https://rickandmortyapi.com/api/character');
     expect(req.request.method).toEqual('GET');
 
     req.flush([]);
@@ -27,7 +27,7 @@ describe('characters http service', () => {
     (service: CharactersHttpService, httpMock: HttpTestingController) => {
 
       service.getCharacters({ name: 'Rick', species: 'Human', status: 'alive', gender: 'male', page: 2 }).subscribe();
-      const req = httpMock.expectOne('https://rickandmortyapi.com/api/characters?name=Rick&species=Human&status=alive&gender=male&page=2');
+      const req = httpMock.expectOne('https://rickandmortyapi.com/api/character?name=Rick&species=Human&status=alive&gender=male&page=2');
       expect(req.request.method).toEqual('GET');
       expect(req.request.params.get('name')).toEqual('Rick');
       //expect(req.request.params.get('type')).toEqual('')

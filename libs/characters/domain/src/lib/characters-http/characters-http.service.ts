@@ -6,7 +6,9 @@ import { Response } from '@rick-and-morty-monorepo/util';
 import { Character, CharacterFilters } from '@rick-and-morty-monorepo/characters-util';
 import { Observable } from 'rxjs';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class CharactersHttpService {
 
   endpoints = new Endpoints();

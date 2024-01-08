@@ -11,16 +11,17 @@ export interface CharacterState {
   isLoading: boolean;
   isError: boolean;
   errorMessage: string | null;
-  characters: Character[] | null;
+  characters: Character[];
   pages: number | null;
 }
 
 export const CharacterStore = signalStore(
+  { providedIn: 'root' },
   withState<CharacterState>({
     isLoading: false,
     isError: false,
     errorMessage: null,
-    characters: null,
+    characters: [],
     pages: null
   }),
   withMethods((store, characterHttpService = inject(CharactersHttpService)) => ({
@@ -29,8 +30,8 @@ export const CharacterStore = signalStore(
         tap(() => patchState(store, { isLoading: true })),
         switchMap((input: CharacterFilters) => characterHttpService.getCharacters(input)),
         tapResponse({
-          next: (result: Response<Character>) => patchState(store, { pages: result.info.pages, characters: result.results }),
-          error: (error: { error: string }) => patchState(store, { isError: true, errorMessage: error.error }),
+          next: (result: Response<Character>) => patchState(store, { pages: result.info.pages, characters: result.results, isLoading: false }),
+          error: (error: { error: string }) => patchState(store, { isError: true, errorMessage: error.error, isLoading: false }),
           finalize: () => patchState(store, { isLoading: false })
         })
       )

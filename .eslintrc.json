@@ -14,11 +14,11 @@
             "depConstraints": [
               {
                 "sourceTag": "scope:app",
-                "onlyDependOnLibsWithTags": ["type:shell", "type:shared-ui"]
+                "onlyDependOnLibsWithTags": ["type:shell", "type:shared"]
               },
               {
                 "sourceTag": "type:api",
-                "onlyDependOnLibsWithTags": ["type:domain", "type:util"]
+                "onlyDependOnLibsWithTags": ["type:domain"]
               },
               {
                 "sourceTag": "type:shell",
@@ -39,6 +39,10 @@
               {
                 "sourceTag": "type:mock",
                 "onlyDependOnLibsWithTags": ["type:util"]
+              },
+              {
+                "sourceTag": "type:shared",
+                "onlyDependOnLibsWithTags": ["type:api"]
               }
             ]
           }

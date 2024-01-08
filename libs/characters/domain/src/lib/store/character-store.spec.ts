@@ -27,8 +27,8 @@ describe('character store', () => {
     const isError = store.isError();
     expect(isError).toBeFalsy();
     store.charactersRequest({});
-    expect(store.pages()).toBe(2);
     expect(store.characters()?.length).toBe(3);
+    expect(store.pages()).toBe(2);
   });
 })
 
